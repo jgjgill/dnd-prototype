@@ -33,7 +33,8 @@ export default function Bubble() {
           <div
             key={i}
             onClick={() => alert(`나는 ${data}!`)}
-            className="w-full h-full rounded-full flex items-center justify-center bg-[#3157DD] text-white font-semibold text-xl">
+            className="w-full h-full rounded-full flex items-center justify-center bg-[#3157DD] text-white font-semibold text-xl"
+          >
             {data}
           </div>
         );
