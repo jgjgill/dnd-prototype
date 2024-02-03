@@ -1,5 +1,5 @@
-declare module 'react-bubble-ui' {
-  import React from 'react';
+declare module "react-bubble-ui" {
+  import React from "react";
 
   interface BubbleProps {
     options: {
@@ -20,7 +20,7 @@ declare module 'react-bubble-ui' {
     className?: string;
   }
 
-  export const BubbleUI: React.FC<BubbleProps>;
+  const BubbleUI: React.FC<BubbleProps>;
 
   export default BubbleUI;
 }

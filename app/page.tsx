@@ -1,6 +1,6 @@
-import dynamic from 'next/dynamic.js';
+import dynamic from "next/dynamic.js";
 
-const Bubble = dynamic(() => import('./bubble'), { ssr: false });
+const Bubble = dynamic(() => import("./bubble"), { ssr: false });
 
 export default function Home() {
   return (
