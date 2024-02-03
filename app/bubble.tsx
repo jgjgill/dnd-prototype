@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 /**
  * @description
@@ -6,9 +6,9 @@
  * 이에 임시로 jsx 확장자명으로 컴포넌트를 구성합니다.
  */
 
-import BubbleUI from "react-bubble-ui";
-import "react-bubble-ui/dist/index.css";
-import { mbtiCombinations } from "./mbti-data";
+import BubbleUI from 'react-bubble-ui';
+import 'react-bubble-ui/dist/index.css';
+import { mbtiCombinations } from './mbti-data';
 
 export default function Bubble() {
   const options = {
@@ -33,7 +33,8 @@ export default function Bubble() {
           <div
             key={i}
             onClick={() => alert(`나는 ${data}!`)}
-            className="w-full h-full rounded-full flex items-center justify-center bg-[#3157DD] text-white font-semibold text-xl">
+            className="w-full h-full rounded-full flex items-center justify-center bg-[#3157DD] text-white font-semibold text-xl"
+          >
             {data}
           </div>
         );
