@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stackflow/core": "^1.0.10",
+    "@stackflow/plugin-basic-ui": "^1.5.2",
+    "@stackflow/plugin-renderer-basic": "^1.1.7",
+    "@stackflow/react": "^1.1.7",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"

@@ -10,7 +10,11 @@ import BubbleUI from "react-bubble-ui";
 import "react-bubble-ui/dist/index.css";
 import { mbtiCombinations } from "./mbti-data";
 
-export default function Bubble() {
+type Props = {
+  handleClick: (value: string) => void;
+};
+
+export default function Bubble({ handleClick }: Props) {
   const options = {
     size: 180,
     minSize: 20,
@@ -26,13 +30,17 @@ export default function Bubble() {
     gravitation: 10,
   };
 
+  const onClick = (value: string) => {
+    handleClick(value);
+  };
+
   return (
     <BubbleUI options={options} className="w-full h-[600px] rounded-[50px]">
       {mbtiCombinations.map((data, i) => {
         return (
           <div
             key={i}
-            onClick={() => alert(`나는 ${data}!`)}
+            onClick={() => onClick(data)}
             className="w-full h-full rounded-full flex items-center justify-center bg-[#3157DD] text-white font-semibold text-xl"
           >
             {data}
