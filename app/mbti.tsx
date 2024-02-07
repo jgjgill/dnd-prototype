@@ -1,5 +1,5 @@
 "use client";
-import { ActivityComponentType, useActivity, useStack } from "@stackflow/react";
+import { ActivityComponentType } from "@stackflow/react";
 import { AppScreen } from "@stackflow/plugin-basic-ui";
 import { useFlow } from "./stack";
 import Bubble from "./bubble";
